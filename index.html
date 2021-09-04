@@ -2,13 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Momentum</title>
   </head>
   <body>
-    <form id="login-form">
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <h2 id="clock">00:00:00</h2>
+    <form class="hidden" id="login-form">
       <input
         required
         maxlength="15"
@@ -17,6 +25,26 @@
       />
       <input type="submit" value="Log In" />
     </form>
-    <script src="src/app.js"></script>
+    <h1 class="hidden" id="greeting"></h1>
+    <div id="todos">
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
